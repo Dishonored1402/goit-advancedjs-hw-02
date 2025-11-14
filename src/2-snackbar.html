@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Task 2 - Promises</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <a href="./index.html" class="nav__link">Home</a>
+        <a href="./1-timer.html" class="nav__link">Timer</a>
+        <a href="./2-snackbar.html" class="nav__link nav__link--active">Promises</a>
+      </nav>
+    </header>
+
+    <main class="page">
+      <section class="section">
+        <h1 class="section__title">Promise generator</h1>
+
+        <form class="form">
+          <label class="form__row">
+            <span class="form__label">Delay (ms)</span>
+            <input type="number" name="delay" required min="0" />
+          </label>
+
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">State</legend>
+
+            <label class="form__radio">
+              <input type="radio" name="state" value="fulfilled" required />
+              <span>Fulfilled</span>
+            </label>
+
+            <label class="form__radio">
+              <input type="radio" name="state" value="rejected" required />
+              <span>Rejected</span>
+            </label>
+          </fieldset>
+
+          <button type="submit">Create notification</button>
+        </form>
+      </section>
+    </main>
+
+    <script type="module" src="./js/2-snackbar.js"></script>
+  </body>
+</html>
