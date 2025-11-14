@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Task 1 - Timer</title>
+    <script type="module" crossorigin src="/goit-advancedjs-hw-02/1-timer.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-advancedjs-hw-02/assets/modulepreload-polyfill-B5Qt9EMX.js">
+    <link rel="modulepreload" crossorigin href="/goit-advancedjs-hw-02/assets/vendor-BbbuE1sJ.js">
+    <link rel="stylesheet" crossorigin href="/goit-advancedjs-hw-02/assets/vendor-CZjNVMTf.css">
+    <link rel="stylesheet" crossorigin href="/goit-advancedjs-hw-02/assets/styles-BrsoZyLa.css">
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <a href="./index.html" class="nav__link">Home</a>
+        <a href="./1-timer.html" class="nav__link nav__link--active">Timer</a>
+        <a href="./2-snackbar.html" class="nav__link">Promises</a>
+      </nav>
+    </header>
+
+    <main class="page">
+      <section class="section">
+        <h1 class="section__title">Countdown timer</h1>
+
+        <div class="timer-controls">
+          <label class="timer-label">
+            <span class="timer-label__text">Pick date &amp; time</span>
+            <input type="text" id="datetime-picker" />
+          </label>
+          <button type="button" data-start disabled>Start</button>
+        </div>
+
+        <div class="timer">
+          <div class="field">
+            <span class="value" data-days>00</span>
+            <span class="label">Days</span>
+          </div>
+          <div class="field">
+            <span class="value" data-hours>00</span>
+            <span class="label">Hours</span>
+          </div>
+          <div class="field">
+            <span class="value" data-minutes>00</span>
+            <span class="label">Minutes</span>
+          </div>
+          <div class="field">
+            <span class="value" data-seconds>00</span>
+            <span class="label">Seconds</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+  </body>
+</html>
